@@ -22,14 +22,17 @@ document.getElementById("qcmForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const expected = {
-    q1: ["obscurité", "la plus belle voix"],
+    q1: ["obscurité"],
     q2: ["achat et vente d’or", "braquage fleeca"],
     q3: ["je m'en vais de la ! et je préviens mon groupe !"],
     q4: ["loyauté", "discrétion"],
     q5: ["j'ai mal appeller les ems pitié !!"],
     q6: ["résister"],
-    q7: ["en parler au groupe"],
-    q8: ["en parler au groupe"]
+    q7: ["en parler au groupe","ignorer"],
+    q8: ["en parler au groupe"],
+    q9: ["Appel"],
+    q10: ["position"],
+    q11: ["respect"],
   };
 
   let score = 0;
@@ -50,10 +53,10 @@ document.getElementById("qcmForm").addEventListener("submit", function (e) {
   }
 
   const result = document.getElementById("result");
-  if (score === 8) {
+  if (score === 11) {
     result.textContent = "✅ Bravo ! Code darknet : ORPHRECR3579";
     result.style.color = "lightgreen";
-  } else if (score >= 5 && score < 8) {
+  } else if (score >= 8 && score < 11) {
     result.textContent =
       "🟡 Pas mal ! Mais tu dois mieux connaître Orpheus et ultima pour obtenir le code.";
     result.style.color = "orange";
