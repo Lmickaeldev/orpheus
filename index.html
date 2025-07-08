@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orpheus - Fiche Groupe</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Popup vérification âge -->
+    <div id="agePopup" class="popup">
+        <div class="popup-content">
+            <h2>🔞 je jure que mes intention sont mauvaise ? </h2>
+            <button id="acceptBtn">Oui</button>
+            <button id="declineBtn">Non</button>
+        </div>
+    </div>
+
+    <div id="warningPopup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2>🚫 Sors d'ici !!</h2>
+            <p>Tu n'as pas le mode de vie requis pour accéder à ce contenu.</p>
+        </div>
+    </div>
+
+    <!-- Contenu principal flouté au départ -->
+    <div id="mainContent" class="blurred">
+        <div class="container">
+            <img src="orpheus.png" alt="Orpheus Logo" class="logo" />
+            <h1>Groupe : Orpheus</h1>
+
+            <section>
+                <h2>ℹ Informations</h2>
+                <ul>
+                    <li><strong>Nom :</strong> Orpheus</li>
+                    <li><strong>Création :</strong> 2025</li>
+                    <li><strong>Adresse :</strong> Inconnue</li>
+                    <li><strong>Type :</strong> Illégal</li>
+                    <li><strong>Rôles :</strong> Achat & vente d’or, braquages, rdv fleeca, etc.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>⭐ Étymologie du nom</h2>
+                <p>Orphée proviendrait du grec "orphen" = « obscurité ». D'autres interprétations : "Ophreus" = « le
+                    renfrogné », ou encore "oreafone" = « la plus belle voix ».</p>
+            </section>
+
+            <section>
+                <h2>📖 Histoire</h2>
+                <p>Dans les ruines d’un passé violent, Riky et Jimmy, issus de groupes disparus, se croisent. L’un
+                    maîtrise l’écoulement de l’or, l’autre trouve un atelier oublié. Ensemble, ils créent Orpheus :
+                    discret, intelligent, structuré.</p>
+                <p>Ni gang, ni mafia, mais un réseau silencieux. Les membres sont choisis avec soin : loyaux, autonomes,
+                    discrets. Pas de QG, pas de chef visible. Juste des ombres qui avancent dans la ville…</p>
+            </section>
+
+            <section>
+                <h2>📝 QCM de Recrutement</h2>
+                <h3>le groupe </h3>
+                <form id="qcmForm">
+                    <div class="question">
+                        <p>1. Quelle est la signification du nom Orpheus ?</p>
+                        <label><input type="checkbox" name="q1" value="obscurité" /> Obscurité</label><br />
+                        <label><input type="checkbox" name="q1" value="puissance" /> Puissance</label><br />
+                        <label><input type="checkbox" name="q1" value="la plus belle voix" /> La plus belle voix</label><br />
+                        <label><input type="checkbox" name="q1" value="argent" /> Argent</label>
+                    </div>
+
+                    <div class="question">
+                        <p>2. Quelle est l'activité principale d'Orpheus ?</p>
+                        <label><input type="checkbox" name="q2" value="achat et vente d’or" /> Achat et vente d’or</label><br />
+                        <label><input type="checkbox" name="q2" value="blanchiment" /> Blanchiment</label><br />
+                        <label><input type="checkbox" name="q2" value="braquage fleeca" /> Braquage fleeca</label><br />
+                        <label><input type="checkbox" name="q2" value="trafic d’armes" /> Trafic d’armes</label>
+                    </div>
+
+                    <div class="question">
+                        <p>3. je trouve un établie de craft. </p>
+                        <label><input type="checkbox" name="q3" value="super ! je commence a fabriqué dessus" /> super ! je commence a fabriqué dessus </label><br />
+                        <label><input type="checkbox" name="q3" value="je m'en vais de la ! et je préviens mon groupe !" /> je m'en vais de la ! et je préviens mon groupe !</label><br />
+                        <label><input type="checkbox" name="q3" value="je fabrique et je ramene la marchandise au groupe !" /> je fabrique et je ramene la marchandise au groupe ! </label><br />
+                        <label><input type="checkbox" name="q3" value="je part et ne dis rien a personne !" /> je part et ne dis rien a personne !</label>
+                    </div>
+
+                    <h3>le mode de vie</h3>
+                    <div class="question">
+                        <p>4. Quelles sont les qualités requises chez les membres ?</p>
+                        <label><input type="checkbox" name="q4" value="loyauté" /> Loyauté</label><br />
+                        <label><input type="checkbox" name="q4" value="discrétion" /> Discrétion</label><br />
+                        <label><input type="checkbox" name="q4" value="force brute" /> Force brute</label><br />
+                        <label><input type="checkbox" name="q4" value="autonomie" /> Autonomie</label>
+                    </div>
+                    <div class="question">
+                        <p>5. je suis en course poursuite mon vehicule tape a grande vitesse </p>
+                        <label><input type="checkbox" name="q5" value="je m'arrete" /> je m'arrete</label><br />
+                        <label><input type="checkbox" name="q5" value="mon vehicule roule encore c'est repartis" /> mon vehicule roule encore c'est repartis </label><br />
+                        <label><input type="checkbox" name="q5" value="je sort du vehicule et tente une fuite a pieds" /> je sort du vehicule et tente une fuite a pieds </label><br />
+                        <label><input type="checkbox" name="q5" value="j'ai mal appeller les ems pitié !!" /> j'ai mal appeller les ems pitié !!</label>
+                    </div>
+                    <div class="question">
+                        <p>6. Que faire si je suis arrêté par la police ?</p>
+                        <label><input type="checkbox" name="q6" value="coopérer" /> Coopérer (je me mets a table concernant les groupe tout )</label><br />
+                        <label><input type="checkbox" name="q6" value="résister" /> Résister (je protege l'illégal avant tout !)</label><br />
+                        <label><input type="checkbox" name="q6" value="mentir" /> Mentir (ésperons que ca passe)</label><br />
+                        <label><input type="checkbox" name="q6" value="ne rien dire" /> Ne rien dire(si je dit rien il n'auront rien a se mettre sous la dent ! )</label>
+                    </div>
+                    <div class="question">
+                        <p>7. Que faire si je suis témoin d'une activité illégale ?</p>
+                        <label><input type="checkbox" name="q7" value="ignorer" /> Ignorer</label><br />
+                        <label><input type="checkbox" name="q7" value="signaler à la police" /> Signaler à la police</label><br />
+                        <label><input type="checkbox" name="q7" value="en parler au groupe" /> En parler au groupe</label><br />
+                        <label><input type="checkbox" name="q7" value="participer" /> Participer</label>
+                    </div>
+                    <div class="question">
+                        <p>8. Que faire si je suis contacté par un membre d'un autre groupe ?</p>
+                        <label><input type="checkbox" name="q8" value="ignorer" /> Ignorer</label><br />
+                        <label><input type="checkbox" name="q8" value="accepter" /> Accepter</label><br />
+                        <label><input type="checkbox" name="q8" value="refuser" /> Refuser</label><br />
+                        <label><input type="checkbox" name="q8" value="en parler au groupe" /> En parler au
+                            groupe</label>
+                    </div>
+                    
+
+                    <button type="submit">Valider</button>
+                </form>
+                <p id="result"></p>
+            </section>
+        </div>
+    </div>
+
+    <script src="qcm.js"></script>
+</body>
+
+</html>
